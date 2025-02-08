@@ -47,7 +47,7 @@ object SimpleInlines {
     val arr = Array.ofDim[Int](10000)
     loop(0, _ < 10000, _ + 1) { i =>
       loop(0, _ < 100000, _ + 1) { j =>
-        arr(i) = arr(i) + u
+        arr(j) = arr(j) + u
       }
       arr(i) = arr(i) + r
     }    
@@ -70,7 +70,7 @@ object SimpleInlines {
     val arr = Array.ofDim[Int](10000)
     loop(0, _ < 10000, _ + 1) { i =>
       loop(0, _ < 100000, _ + 1) { j =>
-        arr(i) = arr(i) + u
+        arr(j) = arr(j) + u
       }
       arr(i) = arr(i) + r
     }    
